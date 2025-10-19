@@ -7,7 +7,7 @@ on:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message,"patrol")
+    if: contains(github.event.head_commit.message,'patrol')
     steps:
        - name: first step (checkout)
          uses: actions/checkout@v4
